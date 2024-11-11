@@ -1,0 +1,9 @@
+function onServerLoad()
+ local player = game.Players.LocalPlayer
+ for i, v in pairs(player) do
+ if type(v) == "number" then
+ player[i] = math.random() * 100 + 1
+ end
+ end
+ print("Server Crasher was created by xtcisascience!")
+end
